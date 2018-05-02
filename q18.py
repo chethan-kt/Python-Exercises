@@ -23,3 +23,23 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 '''
+
+import re
+
+L = []
+pwds = [ x for x in raw_input().split(",") ]
+
+for p in pwds:
+    if len(p)<6 or len(p)>12:
+        continue
+    if not re.search("[a-z]",p):
+        continue
+    elif not re.search("[A-Z]",p):
+        continue
+    elif not re.search("[0-9]",p):
+        continue
+    elif not re.search("[$#@]",p):
+        continue
+    else:
+        pass
+    print p
