@@ -1,0 +1,40 @@
+Python 2.7 (r27:82525, Jul  4 2010, 07:43:08) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+
+>>> 
+>>> 
+>>> range(-5,5)
+[-5, -4, -3, -2, -1, 0, 1, 2, 3, 4]
+>>> 
+>>> 
+>>> 
+>>> n = range(-5,5)
+>>> 
+>>> 
+>>> 
+>>> map(lambda x: x<0, n)
+[True, True, True, True, True, False, False, False, False, False]
+>>> 
+>>> 
+>>> map(lambda x: x**2, n)
+[25, 16, 9, 4, 1, 0, 1, 4, 9, 16]
+>>> 
+>>> 
+>>> 
+>>> filter(lambda x: x<0, n)
+[-5, -4, -3, -2, -1]
+>>> 
+>>> 
+>>> filter(lambda x: x**2, n)
+[-5, -4, -3, -2, -1, 1, 2, 3, 4]
+>>> 
+>>> 
+>>> reduce(lambda x,y:x*y, n)
+0
+>>> 
+>>> 
+>>> reduce(lambda x,y:x*y, [1,2,3,4])
+24
+
+>>> 

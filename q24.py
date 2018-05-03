@@ -14,3 +14,17 @@ Hints:
 
 """
 
+print abs.__doc__
+print
+print int.__doc__
+print
+print raw_input.__doc__
+
+
+def square(x):
+    """
+        This function calculates the square of the passed arguement x and returns it
+    """
+    return x*x
+
+print square.__doc__
